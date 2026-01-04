@@ -1066,7 +1066,7 @@ along with this software (see the LICENSE.md file). If not, see
     <service verb="upload" noun="ProfilePictureAttachment">
         <in-parameters>
             <parameter name="partyId" required="true"/>
-            <parameter name="contentFile" type="org.apache.commons.fileupload.FileItem"/>
+            <parameter name="contentFile" type="org.apache.commons.fileupload2.core.FileItem"/>
             <parameter name="defaultFileName" default-value="DefaultProfilePicture.svg" required="true"/>
             <parameter name="defaultFileRenderLocation" default-value="component://WeCreate/screen/includes/DefaultProfilePicture.xml" required="true"/>
         </in-parameters>
@@ -1093,7 +1093,7 @@ along with this software (see the LICENSE.md file). If not, see
             <parameter name="partyContentTypeEnumId" required="true"/>
             <parameter name="defaultFileName"/>
             <parameter name="defaultFileRenderLocation"><description>Screen location to render the default file. Defaults to the text render mode.</description></parameter>
-            <parameter name="contentFile" type="org.apache.commons.fileupload.FileItem"/>
+            <parameter name="contentFile" type="org.apache.commons.fileupload2.core.FileItem"/>
             <parameter name="saveContentLocation" type="Boolean" default="true"/>
             <parameter name="fileMimeTypeList" required="true" default="ec.service.sync().name('WeCreate.WeCreateServices.get#SupportedImageFileTypeList').call().supportedImageFileTypeList"/>
         </in-parameters>
@@ -1143,7 +1143,7 @@ along with this software (see the LICENSE.md file). If not, see
     <service verb="upload" noun="ProfilePictureAttachmentInternal">
         <in-parameters>
             <parameter name="partyId" required="true"/>
-            <parameter name="contentFile" type="org.apache.commons.fileupload.FileItem"/>
+            <parameter name="contentFile" type="org.apache.commons.fileupload2.core.FileItem"/>
             <parameter name="outputImageFormat" required="true" default-value="jpg"></parameter>
             <parameter name="saveOriginal" type="Boolean" default="false" required="true"><description>If true, will save the original image.</description></parameter>
             <parameter name="saveLarge" type="Boolean" default="false" required="true"><description>If true, will save a large image.</description></parameter>
@@ -1266,7 +1266,7 @@ along with this software (see the LICENSE.md file). If not, see
     <service verb="upload" noun="PostAttachment">
         <in-parameters>
             <parameter name="partyId" required="true"/>
-            <parameter name="contentFile" type="org.apache.commons.fileupload.FileItem"/>
+            <parameter name="contentFile" type="org.apache.commons.fileupload2.core.FileItem"/>
             <parameter name="outputImageFormat" required="true" default-value="jpg"></parameter>
             <parameter name="saveOriginal" type="Boolean" default-value="true" required="true"><description>If true, will save the original image.</description></parameter>
             <parameter name="saveLarge" type="Boolean" default-value="false" required="true"><description>If true, will save a large image.</description></parameter>
@@ -1402,7 +1402,7 @@ along with this software (see the LICENSE.md file). If not, see
     <service verb="upload" noun="ProjectPostAttachment">
         <in-parameters>
             <parameter name="workEffortId" required="true"/>
-            <parameter name="contentFile" type="org.apache.commons.fileupload.FileItem"/>
+            <parameter name="contentFile" type="org.apache.commons.fileupload2.core.FileItem"/>
             <parameter name="outputImageFormat" required="true" default-value="jpg"></parameter>
             <parameter name="saveOriginal" type="Boolean" default-value="true" required="true"><description>If true, will save the original image.</description></parameter>
             <parameter name="saveLarge" type="Boolean" default-value="false" required="true"><description>If true, will save a large image.</description></parameter>
